@@ -5,27 +5,28 @@ Goal: create a program that can convert a temperature in Fahrenheit, Celsius or 
 
 ## Setup
 
-- Fork and clone this repo to your computer.
-- Open `temp_converter.js`.
+- Create an `index.html` file
+- Create a `script.js` file
+- make sure to link the script file in the `index.html`
 
 ## PART 1
 
 ### Instructions
 
-1. Set the `fahrenheit` variable to a starting temperature.
+1. Set the `fahrenheit` variable to temperature that you get from the user
 2. Below that, write Javascript code that converts `fahrenheit` to its equivalent Celsius and Kelvin values.
   - Conversion formulae: [http://www.csgnetwork.com/temp2conv.html](http://www.csgnetwork.com/temp2conv.html)
   - Sample temperatures: 32F = 0C = 273.15K
 3. Below that, `console.log` the starting and converted temperatures.
 4. Repeat steps 1-3 for starting `celsius` and `kelvin` temperatures.
-5. Test your program by running `$ node temp_converter.js` in the command line.
+5. Test your program by opening `index.html` in the browser
 
 
 Your program will look something like this for each starting temperature...
 
   ```javascript
   // Starting temperature
-  var fahrenheit = 32;
+  var fahrenheit = //some code here to get user input;
 
   // Conversion code
   var fahrenheitToCelsius = ...;
@@ -54,12 +55,12 @@ Use conditionals (e.g., `if-else` statement, `switch` statement) so that your pr
 The starting temperature should be determined by a 'whichTemp' variable that you instantiate at the beginning of the program, and will contain a value of either "f" (Fahrenheit), "c" (Celsius) or "k" (Kelvin).
 
 ## PART 2
+Using Conditionals, have your code accept either fahrenheit, celsius or kelvin, and out put the other two temp types.
 
-Restructure your program from PART 1 so that when you convert a temperature, that new value is stored in an array. Your array will end up looking something like this...
+Restructure your program from PART 1 so that when you convert a temperature, that new values are stored in an array. Your array will end up looking something like this...
 
   `var fahrenheitTemps = [ STARTING_TEMP, CONVERTED_TEMP_1, CONVERTED_TEMP_2 ];`
 
-You will have similar arrays for the Celsius and Kelvin portions of your program.  
 
 When you `console.log` the temperatures, make sure you do that by accessing the values stored in the array.  
 
@@ -69,4 +70,4 @@ Use a for or while loop to print out the conversion results for each temperature
 
 ### Bonus 2
 
-Implement the conditionals from the Part I bonus if you haven't already!  
+Using loops, create an interface that continues to ask the user for temp conversions until the user requests to stop.
